@@ -16,7 +16,10 @@ public class Email {
         this.fname = fname;
         this.lname = lname;
         System.out.println("New Employee:"+this.fname+""+this.lname);
-
+        //Calling methods
+        this.dept = this.setDept(); //Department
+        this.password = this.generate_password(15); //Password
+        this.email = this.generate_email(); //Email generation
 
     }
     //Generate the mail method and to achieve abstraction make private
@@ -97,6 +100,15 @@ public class Email {
     public void alternate_email(){
         System.out.println("Enter new alternate mail:");
         this.alter_email = s.next("Alternate email is set");
+    }
+    //Display user information method
+    public void getInfo(){
+        System.out.println("New:"+this.fname+" "+this.lname);
+        System.out.println("Department:"+this.dept);
+        System.out.println("Email:"+this.email);
+        System.out.println("Password:"+this.password); //initial testing only pending removal
+        System.out.println("Mailbox capacity"+this.mailCapacity+"mb");
+        System.out.println("Alternate mail"+this.alter_email);
     }
 
 }
