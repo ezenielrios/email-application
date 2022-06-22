@@ -15,7 +15,7 @@ public class Email {
     public Email(String fname,String lname){
         this.fname = fname;
         this.lname = lname;
-        System.out.println("New Employee:"+this.fname+""+this.lname);
+        System.out.println("New Employee:"+this.fname+" "+this.lname);
         //Calling methods
         this.dept = this.setDept(); //Department
         this.password = this.generate_password(15); //Password
@@ -107,8 +107,8 @@ public class Email {
         System.out.println("Department:"+this.dept);
         System.out.println("Email:"+this.email);
         System.out.println("Password:"+this.password); //initial testing only pending removal
-        System.out.println("Mailbox capacity"+this.mailCapacity+"mb");
-        System.out.println("Alternate mail"+this.alter_email);
+        System.out.println("Mailbox capacity:"+this.mailCapacity+"mb");
+        System.out.println("Alternate mail:"+this.alter_email);
     }
 
 }
