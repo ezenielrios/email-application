@@ -110,5 +110,32 @@ public class Email {
         System.out.println("Mailbox capacity:"+this.mailCapacity+"mb");
         System.out.println("Alternate mail:"+this.alter_email);
     }
+    //Store in File
+    public void storefile(){
+        try{
+            FileWriter in =new FileWriter("");//include full path to file if you have one created
+            in.write("First name:"+this.fname);
+            in.append("\nLast name:"+this.lname);
+            in.append("\nEmail:"+this.email);
+            in.append("\nPassword:"+this.password);//ideally you would not be storing passwords this way.
+            in.append("\nCapacity:"+this.mailCapacity);
+            in.append("\nAlternate mail:"+this.alter_email);
+            in.close();
+            System.out.println("Data Stored...");
+
+        }catch (Exception e){System.out.println(e);}
+    }
+    //Reading File method ***should not be public but for convenience purposes while
+    public void read_file(){
+        try{
+            FileReader f1 = new FileReader("");
+            int i;
+            while((i=f1.read())!=-1){
+                System.out.print((char)i);
+            }
+            f1.close();
+
+        }catch (Exception e){System.out.println(e);}
+    }
 
 }
