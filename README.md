@@ -18,5 +18,5 @@ A basic Java project applying Object-oriented design for a real world email admi
 
 ## Getting Started
 1. Make sure you have java installed on your device
-2. Clone my repository with this Git link and command in your command prompt, in your desired location: ""
+2. Clone my repository with this Git link and command in your command prompt, in your desired location: "https://github.com/ezenielrios/email-application.git"
 5. Run Emailapp.java and run in terminal
