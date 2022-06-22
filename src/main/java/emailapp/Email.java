@@ -86,4 +86,17 @@ public class Email {
             }
         }while (!flag);
     }
+    //set mailbox capacity
+    public void set_mailCap(){
+        System.out.println("Current Capacity= "+this.mailCapacity+"mb");
+        System.out.println("Enter new mailbox capacity:");
+        this.mailCapacity = s.nextInt();
+        System.out.println("Mailbox capacity is successfully changed");
+    }
+    //set alternate mail
+    public void alternate_email(){
+        System.out.println("Enter new alternate mail:");
+        this.alter_email = s.next("Alternate email is set");
+    }
+
 }
