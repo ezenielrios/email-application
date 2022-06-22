@@ -1,5 +1,4 @@
 # email-application
-#Project Description
 A basic Java project applying Object-oriented design for a real world email administration. Only basic backend no clientside developed
 
 ## Technologies Used
